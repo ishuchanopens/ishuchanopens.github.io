@@ -30,6 +30,7 @@
 body{
     /* background-image: url("pglu.jpg"); */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("pglu.jpg");
+    background-color: rgba(0, 0, 0, 0.9);
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: cover;  */
