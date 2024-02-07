@@ -2,8 +2,8 @@ const evilButton = document.getElementById('evil-button')
 const notSoEvilButton = document.getElementById('not-so-evil-button')
 const text = document.getElementById('text')
 const wrapper = document.getElementById('wrapper')
-evilButton.style.left = `7%`
-evilButton.style.top = `50%`
+// evilButton.style.left = `7%`
+// evilButton.style.top = `50%`
 const OFFSET = 100
 
 evilButton.addEventListener('click', () => {
