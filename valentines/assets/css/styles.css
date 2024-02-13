@@ -1,0 +1,210 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /* background-color: white; */
+    background-color: #ff2644;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* @font-face {
+    font-family: "myFirstFont";
+    src: url("assets/fonts/Lovely-Balloon.ttf")
+} */
+
+#wrapper{
+    display: none;
+    height: auto;
+    width: 30%;
+    margin:auto;
+    /* border: 5px solid #fcd9ea; */
+    position: relative;
+    /* 3D */
+    perspective: 1000px;
+}
+
+#pwoposePic{
+  position: absolute;
+  left:auto;
+  top:5%;
+  height: 30%;
+}
+
+#text {
+    /* display: none; */
+    color: #fcd9ea;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Hachi Maru Pop', cursive;
+    /* font-family: 'Twinkle Star', cursive; */
+    user-select: none;
+}
+
+#aftertext{
+    text-align: center;
+    /* display: none; */
+    margin: auto;
+    /* max-width: 30%; */
+    color: #fcd9ea;
+    font-size: 3rem;
+    font-family: 'Twinkle Star', cursive;
+    user-select: none;
+}
+
+.cutuvid{
+  position: absolute;
+  margin: auto;
+  top:auto;
+  max-height: 90%;
+}
+
+#left-Video{
+  display: none;
+  left:5%
+}
+#right-Video{
+  display: none;
+  right:5%
+}
+
+.button {
+    position: absolute;
+    white-space: nowrap;
+    border: 5px solid white;
+    border-radius: 40px;
+    min-width: 12rem;
+    min-height: 6rem;
+    background-color: #ff2644;
+    color: #fcd9ea;
+    box-shadow: none;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 3.5rem;
+}
+
+#not-so-evil-button {
+    top:75%;
+    left:55%;
+}
+
+#evil-button {
+    top:75%;
+    left:35%;
+}
+
+.button:hover{
+    background-color: #fcd9ea;
+    color: #ff2644;
+    transform: scale(1.2);
+}
+
+.door {
+    background-color: #ff2644   ;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    /* inner layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 3rem;
+    color:#fcd9ea;
+    border: 1px solid #fcd9ea;
+  }
+  
+  #left-door {
+    top: 0;
+    left: 0;
+    border-right: 3px solid #fcd9ea;
+    /* transition */
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  #right-door {
+    top: 0;
+    right: 0;
+    border-left: 3px solid #fcd9ea;
+    /* transition */
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  
+  .heart{
+    width: 8rem;
+  }
+
+  .knob {
+    width: 10px;
+    height: 50px;
+    background-color: #D7DADE;
+    position: absolute;
+  }
+  
+  #left-knob {
+    top: 50%;
+    right: 10px;
+  }
+  
+  #right-knob {
+    top: 50%;
+    left: 10px;
+  }
+  
+  /* Door swing effect */
+  #wrapper:hover #left-door{
+    transform: rotateY(-90deg);
+  }
+  
+  #wrapper:hover #right-door{
+    transform: rotateY(90deg);
+  }
+  
+ @media (max-width:767px){
+    body{
+      font-size: 2rem;
+    }
+
+    #text {
+      /* display: none; */
+      font-size: 2rem;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    .button {
+      border: 2px solid white;
+      border-radius: 40px;
+      min-width: 6rem;
+      min-height: 3rem;
+      font-size: 2rem;
+  }
+
+    #not-so-evil-button {
+      top:80%;
+      left:auto;
+  }
+  
+    #evil-button {
+        display: none;
+    }
+
+    #wrapper{
+      width: auto;
+  }
+
+    .door{
+      display: none;
+    }
+    #aftertext{
+    margin: 15px;
+    font-size: 1.5rem;
+}
+  }

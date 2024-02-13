@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /* background-color: #ffd2d9; */
+    background-image: radial-gradient(#ffdddd,#ffb3cc);
+    /* background-color: #ff2644; */
+    /* background-color: #facee5; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1500px;
+    /* overflow: hidden; */
+    /* place-items: center; */
+}
+
+.card{
+    height: 50vh;
+    width: 50vh;
+    /* background-image: radial-gradient(#C90036,#67001B); */
+    background-color: #8e0526;
+    /* border-radius: 20px; */
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 3rem; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+#wrapper{
+    /* background-color: #f980a1; */
+    /* background-color: #e40345; */
+    text-align: center;
+    /* padding-top: 5%; */
+    transform-origin: left;
+    transition: transform 1s;
+    /* backface-visibility: hidden;
+    transform-style: preserve-3d; */
+}
+
+#box{
+    /* display: none; */
+    background-image: none;
+    background-color: #8e0526;
+    /* background-color: #fba7bd; */
+    /* background-color: #f980a1;    */
+    border-left: 2px white;
+    /* opacity: 0.5; */
+    /* align-self: center; */
+    /* transform: translateX(-50vh); */
+    /* margin-left: -50vh; */
+    position: absolute;
+    text-align: justify;
+    z-index: -1;
+}
+
+.greet{
+    margin-top: 15%;
+    /* color: #67001B; */
+    color: #facee5;
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px #fff5, 0 0 10px #fff5, 0 0 15px #e6007355, 0 0 20px #e6007355, 0 0 25px #e6007355, 0 0 30px #e6007355, 0 0 35px #e6007355;
+
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    color: #facee5;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none
+
+}
+
+#button1{
+    position: relative;
+    /* top:35%; */
+    font-family: 'Dancing Script', cursive;
+    /* left:50%; */
+    /* left:auto; */
+    /* margin:auto; */
+}
+
+#button2{
+    position: relative;
+    top:35%;
+    text-align: right;
+    align-self: right;
+    /* left:50%; */
+    /* left:auto; */
+    /* margin:auto; */
+}
+
+.text{
+    margin: 10%;
+    font-size: 1.5rem;
+    color: #facee5;
+}
+
+.shadow {
+    position: absolute;
+    top: 80%;
+    border-radius: 50%;
+    opacity: 0.7;
+    height: 2vmin;
+    width: 48vmin;
+    background: #D8B5C0;
+  }
+
+audio{
+    position: absolute;
+    top: 90%;
+}
+
+.cardpic{
+    height: 50%;
+    align-self: center;
+}
+
+@media (max-width:767px){
+.text{
+    font-size: 1rem;
+}
+}
